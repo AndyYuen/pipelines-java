@@ -6,7 +6,8 @@
 trigger:
 - master
 
-pool: mrdreambot pipelines
+pool: 
+  vmImage: 'ubuntu-latest'
 
 steps:
 - task: Bash@3
