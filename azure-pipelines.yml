@@ -16,7 +16,7 @@ steps:
     script: |
       # Write your commands here
       
-      echo "username-$(USERNAME) password=$(MY_MAPPED_PASSWORD)"
+      echo "username-$(USERNAME) password=$(PASSWORD)"
 
   env:
     MY_MAPPED_PASSWORD: $(PASSWORD)
