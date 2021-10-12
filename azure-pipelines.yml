@@ -16,5 +16,7 @@ steps:
     script: |
       # Write your commands here
       
-      echo 'Starting build'
+      echo "$(USERNAME) $(MY_MAPPED_PASSWORD)"
       mvn package
+  env:
+    MY_MAPPED_PASSWORD: $(PASSWORD)
