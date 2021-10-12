@@ -16,7 +16,7 @@ steps:
     script: |
       # Write your commands here
       
-      echo "$(USERNAME) $(MY_MAPPED_PASSWORD)"
-      mvn package
+      echo "username-$(USERNAME) password=$(MY_MAPPED_PASSWORD)"
+
   env:
     MY_MAPPED_PASSWORD: $(PASSWORD)
